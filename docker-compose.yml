@@ -1,0 +1,39 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: infra/docker/Dockerfile
+    command: >
+      python -m uvicorn api.main:app
+      --app-dir /app/apps
+      --host 0.0.0.0
+      --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      JOURNEYX_AGENT_DRY_RUN: ${JOURNEYX_AGENT_DRY_RUN:-true}
+      JOURNEYX_EMBEDDING_FALLBACK: ${JOURNEYX_EMBEDDING_FALLBACK:-true}
+      JOURNEYX_DISABLE_RERANK: ${JOURNEYX_DISABLE_RERANK:-true}
+      JOURNEYX_CORS_ORIGINS: http://localhost:8501,http://127.0.0.1:8501
+    volumes:
+      - ./config/credentials.local.yaml:/app/config/credentials.local.yaml:ro
+      - ./reports:/app/reports
+      - ./data/checkpoints.sqlite:/app/data/checkpoints.sqlite
+    restart: unless-stopped
+
+  ui:
+    build:
+      context: .
+      dockerfile: infra/docker/Dockerfile
+    command: >
+      streamlit run /app/apps/ui/streamlit_app.py
+      --server.address=0.0.0.0
+      --server.port=8501
+    ports:
+      - "8501:8501"
+    environment:
+      JOURNEYX_API_URL: http://api:8000
+      JOURNEYX_UI_USE_API: "true"
+    depends_on:
+      - api
+    restart: unless-stopped

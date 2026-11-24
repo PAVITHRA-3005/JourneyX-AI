@@ -1,0 +1,23 @@
+{"poi_id": "poi_jaipur_amber", "dest_id": "dest_jaipur", "name": "Amber Fort", "category": "fort", "typical_duration_hrs": 3.0, "fee_band_inr": 200}
+{"poi_id": "poi_jaipur_hawa", "dest_id": "dest_jaipur", "name": "Hawa Mahal", "category": "landmark", "typical_duration_hrs": 1.5, "fee_band_inr": 50}
+{"poi_id": "poi_jaipur_citypalace", "dest_id": "dest_jaipur", "name": "City Palace", "category": "museum", "typical_duration_hrs": 2.5, "fee_band_inr": 300}
+{"poi_id": "poi_goa_baga", "dest_id": "dest_goa", "name": "Baga Beach", "category": "beach", "typical_duration_hrs": 3.0, "fee_band_inr": 0}
+{"poi_id": "poi_goa_old", "dest_id": "dest_goa", "name": "Old Goa Churches", "category": "heritage", "typical_duration_hrs": 2.0, "fee_band_inr": 0}
+{"poi_id": "poi_manali_solang", "dest_id": "dest_manali", "name": "Solang Valley", "category": "adventure", "typical_duration_hrs": 4.0, "fee_band_inr": 500}
+{"poi_id": "poi_kochi_fort", "dest_id": "dest_kochi", "name": "Fort Kochi", "category": "heritage", "typical_duration_hrs": 2.5, "fee_band_inr": 0}
+{"poi_id": "poi_delhi_qutub", "dest_id": "dest_delhi", "name": "Qutub Minar", "category": "landmark", "typical_duration_hrs": 2.0, "fee_band_inr": 40}
+{"poi_id": "poi_agra_taj", "dest_id": "dest_agra", "name": "Taj Mahal", "category": "landmark", "typical_duration_hrs": 3.0, "fee_band_inr": 250}
+{"poi_id": "poi_rishikesh_rafting", "dest_id": "dest_rishikesh", "name": "River Rafting", "category": "adventure", "typical_duration_hrs": 4.0, "fee_band_inr": 1500}
+{"poi_id": "poi_shimla_mall", "dest_id": "dest_shimla", "name": "Mall Road", "category": "leisure", "typical_duration_hrs": 2.0, "fee_band_inr": 0}
+{"poi_id": "poi_mumbai_gateway", "dest_id": "dest_mumbai", "name": "Gateway of India", "category": "landmark", "typical_duration_hrs": 1.0, "fee_band_inr": 0}
+{"poi_id": "poi_jaipur_jantar", "dest_id": "dest_jaipur", "name": "Jantar Mantar", "category": "heritage", "typical_duration_hrs": 1.5, "fee_band_inr": 200}
+{"poi_id": "poi_goa_dudhsagar", "dest_id": "dest_goa", "name": "Dudhsagar Falls day trip", "category": "nature", "typical_duration_hrs": 8.0, "fee_band_inr": 0}
+{"poi_id": "poi_manali_hadimba", "dest_id": "dest_manali", "name": "Hadimba Temple", "category": "temple", "typical_duration_hrs": 1.5, "fee_band_inr": 0}
+{"poi_id": "poi_kochi_backwater", "dest_id": "dest_kochi", "name": "Alleppey backwater cruise", "category": "cruise", "typical_duration_hrs": 6.0, "fee_band_inr": 1200}
+{"poi_id": "poi_delhi_redfort", "dest_id": "dest_delhi", "name": "Red Fort", "category": "fort", "typical_duration_hrs": 2.0, "fee_band_inr": 35}
+{"poi_id": "poi_agra_fort", "dest_id": "dest_agra", "name": "Agra Fort", "category": "fort", "typical_duration_hrs": 2.0, "fee_band_inr": 50}
+{"poi_id": "poi_rishikesh_laxman", "dest_id": "dest_rishikesh", "name": "Laxman Jhula", "category": "landmark", "typical_duration_hrs": 1.0, "fee_band_inr": 0}
+{"poi_id": "poi_shimla_kufri", "dest_id": "dest_shimla", "name": "Kufri day excursion", "category": "nature", "typical_duration_hrs": 5.0, "fee_band_inr": 300}
+{"poi_id": "poi_mumbai_marine", "dest_id": "dest_mumbai", "name": "Marine Drive", "category": "leisure", "typical_duration_hrs": 1.5, "fee_band_inr": 0}
+{"poi_id": "poi_bangalore_lalbagh", "dest_id": "dest_bangalore", "name": "Lalbagh Botanical Garden", "category": "park", "typical_duration_hrs": 2.0, "fee_band_inr": 30}
+{"poi_id": "poi_bangalore_mysore_stub", "dest_id": "dest_bangalore", "name": "Weekend hub to Mysore", "category": "info", "typical_duration_hrs": 0.5, "fee_band_inr": 0}

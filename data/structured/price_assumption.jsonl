@@ -1,0 +1,3 @@
+{"key": "food_budget_daily_inr", "value": 600, "unit": "inr_per_person_per_day", "disclaimer": "Indicative vegetarian mix; varies by city tier."}
+{"key": "food_mid_daily_inr", "value": 1000, "unit": "inr_per_person_per_day", "disclaimer": "Indicative mid-range dining."}
+{"key": "local_transport_daily_inr", "value": 350, "unit": "inr_per_group_per_day", "disclaimer": "Autos/cabs within city; indicative."}

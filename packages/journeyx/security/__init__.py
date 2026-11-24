@@ -1,0 +1,1 @@
+"""Safety checks: injection probes, PII patterns."""

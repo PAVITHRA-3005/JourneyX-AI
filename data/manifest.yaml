@@ -1,0 +1,21 @@
+corpus_version: v1
+document_count: 523
+chunk_count: 523
+chunking_winner: pending_ingest
+embedding_model_ref: capstone_embeddings
+hold_out_destinations:
+- city_mysore
+- city_udaipur
+- city_varanasi
+built_at: '2026-11-22T12:40:18.913148+00:00'
+structured_counts:
+  cities: 13
+  destinations: 13
+  pois: 23
+  accommodations: 10
+  routes: 12
+  transport_options: 72
+eval_count: 72
+retrieval_label_count: 38
+faq_map_count: 13
+corpus_note: RAG begins chunking/index on this corpus; hold-outs excluded from tuning.

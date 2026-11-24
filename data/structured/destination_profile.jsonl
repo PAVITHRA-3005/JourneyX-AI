@@ -1,0 +1,13 @@
+{"dest_id": "dest_jaipur", "city_id": "city_jaipur", "tags": ["heritage", "forts", "culture"], "budget_tier": "mid", "summary_doc_id": "doc_dest_jaipur_guide_v1"}
+{"dest_id": "dest_goa", "city_id": "city_goa", "tags": ["beach", "nightlife", "relaxation"], "budget_tier": "mid", "summary_doc_id": "doc_dest_goa_guide_v1"}
+{"dest_id": "dest_manali", "city_id": "city_manali", "tags": ["mountains", "adventure", "snow"], "budget_tier": "mid", "summary_doc_id": "doc_dest_manali_guide_v1"}
+{"dest_id": "dest_kochi", "city_id": "city_kochi", "tags": ["backwaters", "food", "culture"], "budget_tier": "mid", "summary_doc_id": "doc_dest_kochi_guide_v1"}
+{"dest_id": "dest_delhi", "city_id": "city_delhi", "tags": ["capital", "history", "food"], "budget_tier": "mid", "summary_doc_id": "doc_dest_delhi_guide_v1"}
+{"dest_id": "dest_bangalore", "city_id": "city_bangalore", "tags": ["urban", "tech", "weekend_hub"], "budget_tier": "mid", "summary_doc_id": "doc_dest_bangalore_guide_v1"}
+{"dest_id": "dest_mumbai", "city_id": "city_mumbai", "tags": ["coastal", "urban", "food"], "budget_tier": "premium", "summary_doc_id": "doc_dest_mumbai_guide_v1"}
+{"dest_id": "dest_shimla", "city_id": "city_shimla", "tags": ["hills", "colonial", "family"], "budget_tier": "mid", "summary_doc_id": "doc_dest_shimla_guide_v1"}
+{"dest_id": "dest_rishikesh", "city_id": "city_rishikesh", "tags": ["yoga", "rafting", "spiritual"], "budget_tier": "budget", "summary_doc_id": "doc_dest_rishikesh_guide_v1"}
+{"dest_id": "dest_agra", "city_id": "city_agra", "tags": ["taj_mahal", "heritage", "day_trip"], "budget_tier": "budget", "summary_doc_id": "doc_dest_agra_guide_v1"}
+{"dest_id": "dest_mysore", "city_id": "city_mysore", "tags": ["holdout_eval"], "budget_tier": "mid", "summary_doc_id": "doc_city_mysore_stub_v1"}
+{"dest_id": "dest_udaipur", "city_id": "city_udaipur", "tags": ["holdout_eval"], "budget_tier": "mid", "summary_doc_id": "doc_city_udaipur_stub_v1"}
+{"dest_id": "dest_varanasi", "city_id": "city_varanasi", "tags": ["holdout_eval"], "budget_tier": "mid", "summary_doc_id": "doc_city_varanasi_stub_v1"}

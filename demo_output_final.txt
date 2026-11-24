@@ -1,0 +1,178 @@
+
+============================================================
+QUERY: Book me a train ticket to Jaipur
+============================================================
+STATUS: refuse
+INTENT: None
+STEPS: 2
+TOOL CALLS: 0
+
+RESPONSE:
+I can help with indicative travel planning from our knowledge base, but I cannot complete bookings, payments, handle personal identity documents, guarantee live fares, or advise on medical/unsafe matters. Please use official channels for those.
+
+============================================================
+QUERY: Compare train and bus from Delhi to Jaipur
+============================================================
+STATUS: ok
+INTENT: compare_transport
+STEPS: 7
+TOOL CALLS: 2
+
+RESPONSE:
+When planning a trip from Delhi to Jaipur, both **train** and **bus** are viable transportation options. Here's a comparison to help you decide which mode of travel suits your needs best:
+
+---
+
+### ✈️ **Train (Railway)**
+**Pros:**
+- **Reliability:** Trains are generally more punctual and less affected by traffic.
+- **Comfort:** Trains offer seating, air conditioning (AC) options, and sometimes even sleeper coaches for overnight journeys.
+- **Safety:** Trains are considered safer than buses, especially on long distances.
+- **Scenic views:** You can enjoy the changing landscapes of Rajasthan from the window.
+- **Connectivity:** Trains connect to multiple cities and can be a good option if you plan to travel further after reaching Jaipur.
+
+**Cons:**
+- **Time:** The journey can take around **7–9 hours**, depending on the train.
+- **Crowds:** During peak seasons or festivals, trains can get very crowded.
+- **Cost:** AC trains can be more expensive than buses, though non-AC options are available.
+
+**Popular Trains:**
+- **Delhi–Jaipur Express (14611/14612)**
+- **Delhi–Jaipur AC Special (12411/12412)**
+- **Delhi–Jaipur Shatabdi Express (12413/12414)**
+
+---
+
+### 🚌 **Bus (Road)**
+**Pros:**
+- **Cost-effective:** Buses are usually the cheapest option, especially for budget travelers.
+- **Flexibility:** You can choose from various private and government-run bus operators.
+- **Direct routes:** Some buses offer direct services from Delhi to Jaipur, which can be faster than trains.
+- **Convenience:** You can board and alight at different points along the way if needed.
+
+**Cons:**
+- **Unpredictable:** Buses can be delayed due to traffic, road conditions, or weather.
+- **Comfort:** Long-distance buses may not be as comfortable as trains, especially on overnight trips.
+- **Safety:** While generally safe, buses can be more vulnerable to accidents compared to trains.
+- **Limited facilities:** Most buses do not offer AC, food, or restrooms on board.
+
+**Popular Bus Operators:**
+- **SRS Travels**
+- **Sri Krishna Travels**
+- **Kalyani Travels**
+- **Rajasthan State Road Transport Corporation (RSRTC)**
+
+---
+
+### 📌 Tips for Travelers:
+- **Book in advance:** Especially during peak seasons or festivals, it's best to book your tickets well ahead.
+- **Check timings:** Consider the time of arrival and departure, especially if you have a tight schedule.
+- **Pack essentials:** For buses, bring water, snacks, and a jacket. For trains, bring a travel bag and keep your documents safe.
+- **Safety first:** Always choose licensed operators and ensure your vehicle is in good condition.
+
+---
+
+### 📅 Estimated Travel Time:
+- **Train:** ~7–9 hours
+- **Bus:** ~8–12 hours (depending on traffic and route)
+
+---
+
+### 🧭 Final Recommendation:
+- **Choose train** if you prioritize comfort, safety, and reliability.
+- **Choose bus** if you're on a budget and looking for a more flexible and direct option.
+
+Let me know if you'd like help booking tickets or planning your itinerary!
+
+============================================================
+QUERY: Plan 3 days in Jaipur from Delhi for 2 people under 20000 by train
+============================================================
+STATUS: ok
+INTENT: full_plan
+STEPS: 5
+TOOL CALLS: 8
+
+RESPONSE:
+Here's a **3-day travel plan from Delhi to Jaipur for 2 people under ₹20,000**, using **train travel** and focusing on **budget-friendly activities** and **local experiences**. This plan is designed to be **moderate in pace**, with a mix of heritage, culture, and street food.
+
+---
+
+## 🚆 **Travel from Delhi to Jaipur by Train (Budget-Friendly)**
+- **Train Fare (2 people, 1st AC or 2nd AC):** ₹1,500–₹2,500 (depending on the class and booking time)
+- **Train Time:** ~7–9 hours (e.g., **Delhi–Jaipur Express** or **Delhi–Jaipur AC Special**)
+
+---
+
+## 🏨 **Accommodation (Optional)**
+If you want to stay in Jaipur, consider budget hotels or guesthouses:
+- **Budget Hotels:** ₹500–₹1,000 per night for 2 people
+- **Staying in Jaipur:** ₹1,000–₹1,500 for 3 nights (optional)
+
+---
+
+## 🍜 **Food Budget (Estimated)**
+- **Street food & local eateries:** ₹500–₹700 per person per day
+- **Total for 3 days:** ₹3,000–₹4,200
+
+---
+
+## 📅 **3-Day Itinerary: Jaipur (From Delhi) – Budget Under ₹20,000**
+
+---
+
+### **Day 1: Arrival & Explore Old City & City Palace**
+- **Morning:**
+  - Arrive in Jaipur by train (approx. 8:00 AM)
+  - Check into a budget hotel (optional)
+  - **Walk to the City Palace** – A stunning Mughal-era palace with beautiful gardens and a museum.
+- **Afternoon:**
+  - **Jantar Mantar (Astronomical Observatory)** – A UNESCO World Heritage Site with unique architectural marvels.
+- **Evening:**
+  - **Street Food Trail** – Try local delicacies like **dalbharta**, **ghevar**, **kheer**, and **mawa kheer** at local street food stalls.
+  - **Pink City Sunset** – Enjoy the view of the pink-hued city as the sun sets.
+
+**Accommodation (Optional):** Check into a budget hotel in the Old City area.
+
+---
+
+### **Day 2: Amber Fort & Jaipur Heritage Loop**
+- **Morning:**
+  - **Amber Fort** – A 16th-century fort located 11 km from Jaipur. Take a **horse ride** to the fort (approx. ₹150 per person).
+  - Explore the fort's architecture, museums, and enjoy the panoramic views.
+- **Afternoon:**
+  - **Jal Mahal (Water Palace)** – A beautiful palace built on an island in the Man Sagar Lake.
+- **Evening:**
+  - **Birla Palace** – A grand Indo-Saracenic palace with a beautiful garden and a museum.
+  - **Dinner at a local restaurant** – Try **dal makhani**, **biryani**, and **chhole bhature**.
+
+---
+
+### **Day 3: Jaipur Markets & Departure**
+- **Morning:**
+  - **Johari Bazaar** – Explore the famous market for traditional jewelry, textiles, and handicrafts.
+  - **Tripoli Bazaar** – A great place to buy spices, sweets, and local souvenirs.
+- **Afternoon:**
+  - **Chokdi Bazaar** – A local market for everyday items and street food.
+  - **Optional:** Visit **Albert Hall Museum** or **Hawa Mahal** if time permits.
+- **Evening:**
+  - Departure from Jaipur by train back to Delhi.
+
+---
+
+## 💰 **Estimated Total Cost (2 People)**
+| **Category**         | **Cost (₹)** |
+|----------------------|-------------|
+| Train (Delhi–Jaipur) | ₹2,500      |
+| Train (Jaipur–Delhi) | ₹2,500      |
+| Accommodation (3 nights) | ₹1,500 |
+| Food (3 days)        | ₹3,500      |
+| Entry Fees & Activities | ₹1,500 |
+| **Total**            | **₹11,500** |
+
+---
+
+## 📌 **Tips for Budget Travel**
+- Book train tickets in advance for better rates.
+- Use local transport (auto-rickshaws or taxis) for short distances.
+- Carry cash for small purchases and entry fees.
+- Use apps like **Google Maps** and **Ola/Cabify** for navigation

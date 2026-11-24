@@ -1,0 +1,12 @@
+{"route_id": "route_delhi_jaipur", "origin_city_id": "city_delhi", "dest_city_id": "city_jaipur", "distance_km": 268}
+{"route_id": "route_delhi_agra", "origin_city_id": "city_delhi", "dest_city_id": "city_agra", "distance_km": 233}
+{"route_id": "route_delhi_manali", "origin_city_id": "city_delhi", "dest_city_id": "city_manali", "distance_km": 540}
+{"route_id": "route_delhi_goa", "origin_city_id": "city_delhi", "dest_city_id": "city_goa", "distance_km": 1870}
+{"route_id": "route_mumbai_goa", "origin_city_id": "city_mumbai", "dest_city_id": "city_goa", "distance_km": 590}
+{"route_id": "route_bangalore_mysore", "origin_city_id": "city_bangalore", "dest_city_id": "city_mysore", "distance_km": 145}
+{"route_id": "route_bangalore_kochi", "origin_city_id": "city_bangalore", "dest_city_id": "city_kochi", "distance_km": 525}
+{"route_id": "route_delhi_rishikesh", "origin_city_id": "city_delhi", "dest_city_id": "city_rishikesh", "distance_km": 240}
+{"route_id": "route_delhi_shimla", "origin_city_id": "city_delhi", "dest_city_id": "city_shimla", "distance_km": 342}
+{"route_id": "route_jaipur_udaipur", "origin_city_id": "city_jaipur", "dest_city_id": "city_udaipur", "distance_km": 390}
+{"route_id": "route_mumbai_udaipur", "origin_city_id": "city_mumbai", "dest_city_id": "city_udaipur", "distance_km": 760}
+{"route_id": "route_delhi_varanasi", "origin_city_id": "city_delhi", "dest_city_id": "city_varanasi", "distance_km": 820}

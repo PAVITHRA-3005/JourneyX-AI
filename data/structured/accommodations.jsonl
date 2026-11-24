@@ -1,0 +1,10 @@
+{"stay_id": "stay_jaipur_mid_01", "dest_id": "dest_jaipur", "name": "Heritage Haveli Inn", "tier": "mid", "price_per_night_inr": 3200, "area": "Old City"}
+{"stay_id": "stay_jaipur_bud_01", "dest_id": "dest_jaipur", "name": "Pink City Hostel", "tier": "budget", "price_per_night_inr": 900, "area": "Bani Park"}
+{"stay_id": "stay_goa_mid_01", "dest_id": "dest_goa", "name": "Calangute Bay Stay", "tier": "mid", "price_per_night_inr": 4500, "area": "Calangute"}
+{"stay_id": "stay_goa_bud_01", "dest_id": "dest_goa", "name": "Beach Shack Lodge", "tier": "budget", "price_per_night_inr": 1200, "area": "Anjuna"}
+{"stay_id": "stay_manali_mid_01", "dest_id": "dest_manali", "name": "Himalayan Retreat", "tier": "mid", "price_per_night_inr": 3800, "area": "Old Manali"}
+{"stay_id": "stay_kochi_mid_01", "dest_id": "dest_kochi", "name": "Backwater View Hotel", "tier": "mid", "price_per_night_inr": 3500, "area": "Fort Kochi"}
+{"stay_id": "stay_delhi_mid_01", "dest_id": "dest_delhi", "name": "Connaught Stay", "tier": "mid", "price_per_night_inr": 4000, "area": "CP"}
+{"stay_id": "stay_agra_bud_01", "dest_id": "dest_agra", "name": "Taj Side Guesthouse", "tier": "budget", "price_per_night_inr": 1500, "area": "Taj Ganj"}
+{"stay_id": "stay_shimla_mid_01", "dest_id": "dest_shimla", "name": "Ridge View Hotel", "tier": "mid", "price_per_night_inr": 3000, "area": "The Ridge"}
+{"stay_id": "stay_rishikesh_bud_01", "dest_id": "dest_rishikesh", "name": "Ganga Ashram Stay", "tier": "budget", "price_per_night_inr": 800, "area": "Laxman Jhula"}

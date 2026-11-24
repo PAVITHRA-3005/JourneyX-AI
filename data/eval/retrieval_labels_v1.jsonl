@@ -1,0 +1,38 @@
+{"eval_id": "eval_rag_01", "query": "What are the best months to visit Jaipur?", "relevant_doc_ids": ["doc_dest_jaipur_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_rag_02", "query": "What is Amber Fort linked poi id?", "relevant_doc_ids": ["doc_poi_jaipur_amber_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_rag_04", "query": "Best months for Goa beaches?", "relevant_doc_ids": ["doc_dest_goa_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_rag_05", "query": "POI for Taj Mahal?", "relevant_doc_ids": ["doc_poi_agra_taj_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_rag_06", "query": "Delhi to Jaipur diesel road mode in KB?", "relevant_doc_ids": ["doc_route_delhi_jaipur_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_rag_07", "query": "What activities in Manali?", "relevant_doc_ids": ["doc_dest_manali_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_rag_15", "query": "Varanasi hold-out stub exists?", "relevant_doc_ids": ["doc_city_varanasi_stub_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_rag_16", "query": "Udaipur hold-out stub?", "relevant_doc_ids": ["doc_city_udaipur_stub_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_rag_17", "query": "Mysore hold-out stub?", "relevant_doc_ids": ["doc_city_mysore_stub_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_01", "query": "Compare Delhi to Jaipur transport for 2 people", "relevant_doc_ids": ["doc_route_delhi_jaipur_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_02", "query": "Delhi to Agra train vs road indicative", "relevant_doc_ids": ["doc_route_delhi_agra_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_03", "query": "Mumbai to Goa flight vs bus", "relevant_doc_ids": ["doc_route_mumbai_goa_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_04", "query": "Bangalore to Mysore options", "relevant_doc_ids": ["doc_route_bangalore_mysore_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_05", "query": "Delhi to Manali how long train or road", "relevant_doc_ids": ["doc_route_delhi_manali_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_06", "query": "Delhi to Rishikesh bus cost band", "relevant_doc_ids": ["doc_route_delhi_rishikesh_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_07", "query": "Delhi to Shimla distance km", "relevant_doc_ids": ["doc_route_delhi_shimla_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_08", "query": "Bangalore to Kochi modes", "relevant_doc_ids": ["doc_route_bangalore_kochi_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_09", "query": "Jaipur to Udaipur compare", "relevant_doc_ids": ["doc_route_jaipur_udaipur_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_10", "query": "Delhi to Varanasi train band", "relevant_doc_ids": ["doc_route_delhi_varanasi_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_11", "query": "Delhi to Goa EV road rough cost", "relevant_doc_ids": ["doc_route_delhi_goa_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_12", "query": "Delhi to Jaipur petrol road trip", "relevant_doc_ids": ["doc_route_delhi_jaipur_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_13", "query": "Delhi to Jaipur diesel road trip cost", "relevant_doc_ids": ["doc_route_delhi_jaipur_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "eval_transport_14", "query": "Mumbai to Udaipur flight indicative", "relevant_doc_ids": ["doc_route_mumbai_udaipur_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_delhi_qutub", "query": "Which POI is Qutub Minar?", "relevant_doc_ids": ["doc_poi_delhi_qutub_v1", "doc_dest_delhi_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_goa_churches", "query": "Old Goa churches activity", "relevant_doc_ids": ["doc_poi_goa_old_v1", "doc_dest_goa_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_manali_solang", "query": "Solang Valley adventure Manali", "relevant_doc_ids": ["doc_poi_manali_solang_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_route_delhi_jaipur", "query": "Delhi Jaipur distance train", "relevant_doc_ids": ["doc_route_delhi_jaipur_transport_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_jaipur_amber", "query": "Amber Fort duration Jaipur", "relevant_doc_ids": ["doc_poi_jaipur_amber_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_jaipur_0", "query": "dest_jaipur street food trail tips", "relevant_doc_ids": ["doc_dest_jaipur_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_goa_1", "query": "dest_goa sunrise viewpoint tips", "relevant_doc_ids": ["doc_dest_goa_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_manali_2", "query": "dest_manali local market walk tips", "relevant_doc_ids": ["doc_dest_manali_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_kochi_3", "query": "dest_kochi museum half-day tips", "relevant_doc_ids": ["doc_dest_kochi_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_delhi_4", "query": "dest_delhi sunset spot tips", "relevant_doc_ids": ["doc_dest_delhi_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_bangalore_5", "query": "dest_bangalore photography walk tips", "relevant_doc_ids": ["doc_dest_bangalore_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_mumbai_6", "query": "dest_mumbai temple etiquette tips", "relevant_doc_ids": ["doc_dest_mumbai_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_shimla_7", "query": "dest_shimla monsoon packing tips", "relevant_doc_ids": ["doc_dest_shimla_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_rishikesh_8", "query": "dest_rishikesh winter layering tips", "relevant_doc_ids": ["doc_dest_rishikesh_guide_v1"], "corpus_version": "v1"}
+{"eval_id": "retrieval_dest_agra_9", "query": "dest_agra family kid-friendly tips", "relevant_doc_ids": ["doc_dest_agra_guide_v1"], "corpus_version": "v1"}

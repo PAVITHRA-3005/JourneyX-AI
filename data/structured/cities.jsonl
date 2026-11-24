@@ -1,0 +1,13 @@
+{"city_id": "city_delhi", "name": "Delhi", "state": "Delhi", "lat": 28.6139, "lon": 77.209, "airport_code": "DEL", "best_months": ["Oct", "Nov", "Feb", "Mar"]}
+{"city_id": "city_jaipur", "name": "Jaipur", "state": "Rajasthan", "lat": 26.9124, "lon": 75.7873, "airport_code": "JAI", "best_months": ["Oct", "Nov", "Dec", "Feb"]}
+{"city_id": "city_goa", "name": "Goa", "state": "Goa", "lat": 15.2993, "lon": 74.124, "airport_code": "GOI", "best_months": ["Nov", "Dec", "Jan", "Feb"]}
+{"city_id": "city_manali", "name": "Manali", "state": "Himachal Pradesh", "lat": 32.2432, "lon": 77.1892, "airport_code": null, "best_months": ["Mar", "Apr", "May", "Jun"]}
+{"city_id": "city_kochi", "name": "Kochi", "state": "Kerala", "lat": 9.9312, "lon": 76.2673, "airport_code": "COK", "best_months": ["Oct", "Nov", "Dec", "Jan"]}
+{"city_id": "city_bangalore", "name": "Bengaluru", "state": "Karnataka", "lat": 12.9716, "lon": 77.5946, "airport_code": "BLR", "best_months": ["Oct", "Nov", "Dec", "Jan"]}
+{"city_id": "city_mumbai", "name": "Mumbai", "state": "Maharashtra", "lat": 19.076, "lon": 72.8777, "airport_code": "BOM", "best_months": ["Nov", "Dec", "Jan", "Feb"]}
+{"city_id": "city_shimla", "name": "Shimla", "state": "Himachal Pradesh", "lat": 31.1048, "lon": 77.1734, "airport_code": null, "best_months": ["Apr", "May", "Jun", "Dec"]}
+{"city_id": "city_rishikesh", "name": "Rishikesh", "state": "Uttarakhand", "lat": 30.0869, "lon": 78.2676, "airport_code": null, "best_months": ["Sep", "Oct", "Nov", "Mar"]}
+{"city_id": "city_agra", "name": "Agra", "state": "Uttar Pradesh", "lat": 27.1767, "lon": 78.0081, "airport_code": null, "best_months": ["Oct", "Nov", "Feb", "Mar"]}
+{"city_id": "city_mysore", "name": "Mysuru", "state": "Karnataka", "lat": 12.2958, "lon": 76.6394, "airport_code": null, "best_months": ["Oct", "Nov", "Feb"]}
+{"city_id": "city_udaipur", "name": "Udaipur", "state": "Rajasthan", "lat": 24.5854, "lon": 73.7125, "airport_code": null, "best_months": ["Oct", "Nov", "Feb"]}
+{"city_id": "city_varanasi", "name": "Varanasi", "state": "Uttar Pradesh", "lat": 25.3176, "lon": 82.9739, "airport_code": null, "best_months": ["Oct", "Nov", "Feb"]}
