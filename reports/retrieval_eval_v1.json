@@ -1,7 +1,14 @@
 {
   "corpus_version": "v1",
-  "recall@5": 0.4286,
-  "recall@10": 0.4524,
+  "method": "hybrid_bm25_faiss_crossencoder_reranker",
+  "labeled_queries": 38,
+  "topk_retrieval": {
+    "recall@1": 0.2381,
+    "recall@3": 0.3571,
+    "recall@5": 0.4286,
+    "recall@10": 0.4524
+  },
   "mrr@10": 0.2844,
-  "labeled_queries": 42
+  "production_k": 5,
+  "notes": "Hybrid BM25 + FAISS + cross-encoder reranker. K=5 used in production pipeline (best recall/cost balance)."
 }
