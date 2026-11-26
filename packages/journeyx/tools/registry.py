@@ -33,7 +33,7 @@ def run_task(task: TaskPlanItem, slots: TripSlots, user_message: str) -> dict[st
         ),
         "find_accommodations": lambda: find_accommodations(
             slots.dest_id or "dest_jaipur",
-            tier="mid",
+            # No tier filter — show all tiers (luxury, mid, budget) for full choice
         ),
         "list_pois": lambda: list_pois(slots.dest_id or "dest_jaipur"),
         "estimate_budget": lambda: estimate_budget(

@@ -46,9 +46,13 @@ class Accommodation(BaseModel):
     stay_id: str
     dest_id: str
     name: str
-    tier: Literal["budget", "mid", "premium"]
+    tier: Literal["budget", "mid", "premium", "luxury"]
     price_per_night_inr: int
     area: str
+    price_min_inr: int | None = None
+    price_max_inr: int | None = None
+    booking_url: str | None = None
+    description: str | None = None
 
 
 class Route(BaseModel):

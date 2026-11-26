@@ -105,4 +105,5 @@ def run_turn(
         "tool_calls": final.get("tool_calls", 0),
         "planner_intent": (final.get("planner") or {}).get("intent"),
         "spans": final.get("spans", []),
+        "followup_suggestions": final.get("followup_suggestions", []),
     }

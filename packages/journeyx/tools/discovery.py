@@ -67,16 +67,23 @@ def find_accommodations(
             continue
         if max_price_per_night_inr is not None and stay.price_per_night_inr > max_price_per_night_inr:
             continue
-        rows.append(
-            {
-                "stay_id": stay.stay_id,
-                "name": stay.name,
-                "tier": stay.tier,
-                "price_per_night_inr": stay.price_per_night_inr,
-                "area": stay.area,
-                "citation": f"tool:find_accommodations:{stay.stay_id}",
-            }
-        )
+        row: dict[str, Any] = {
+            "stay_id": stay.stay_id,
+            "name": stay.name,
+            "tier": stay.tier,
+            "price_per_night_inr": stay.price_per_night_inr,
+            "area": stay.area,
+            "citation": f"tool:find_accommodations:{stay.stay_id}",
+        }
+        if stay.price_min_inr is not None:
+            row["price_min_inr"] = stay.price_min_inr
+        if stay.price_max_inr is not None:
+            row["price_max_inr"] = stay.price_max_inr
+        if stay.booking_url:
+            row["booking_url"] = stay.booking_url
+        if stay.description:
+            row["description"] = stay.description
+        rows.append(row)
         if len(rows) >= limit:
             break
     return {

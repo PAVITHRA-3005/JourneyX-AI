@@ -27,3 +27,4 @@ class AgentState(TypedDict, total=False):
     status: str  # ok | clarify | refuse | degraded
 
     spans: list[dict[str, Any]]
+    followup_suggestions: list[str]

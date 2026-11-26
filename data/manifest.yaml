@@ -1,7 +1,7 @@
 corpus_version: v1
 document_count: 523
-chunk_count: 523
-chunking_winner: pending_ingest
+chunk_count: 557
+chunking_winner: structure_aware
 embedding_model_ref: capstone_embeddings
 hold_out_destinations:
 - city_mysore
@@ -19,3 +19,8 @@ eval_count: 72
 retrieval_label_count: 38
 faq_map_count: 13
 corpus_note: RAG begins chunking/index on this corpus; hold-outs excluded from tuning.
+chunking_strategy: structure_aware
+chunks_fingerprint: 13cbdc05d4431e9e
+indexed_at: '2026-11-26T12:42:18.199260+00:00'
+embedding_fallback: true
+experiment_results: {}

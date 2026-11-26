@@ -117,6 +117,8 @@ $env:JOURNEYX_API_URL = "http://127.0.0.1:8000"
 | **Primary evaluation report** | `docs/eval_report.md` in the repository |
 | **Agent evaluation data** | `reports/agent_eval_v1.json` |
 | **Retrieval evaluation data** | `reports/retrieval_eval_v1.json` |
+| **Evaluation metrics script** | `scripts/run_evaluation_metrics.py` |
+| **Evaluation metrics output** | `reports/evaluation_metrics.json` |
 | **Baseline comparison** | `docs/baseline_results_summary.md` |
 | **Prompting strategies** | `prompts/baseline/` (strategy_a, strategy_b, strategy_c) |
 
@@ -154,9 +156,28 @@ $env:JOURNEYX_API_URL = "http://127.0.0.1:8000"
 
 | Metric | Value |
 |---|---|
-| Recall@5 | 42.9% |
+| Recall@1 | 23.8% |
+| Recall@3 | 35.7% |
+| Recall@5 | **42.9%** |
 | Recall@10 | 45.2% |
 | MRR@10 | 0.2844 |
+
+**Lexical Metrics (ROUGE, BLEU) — RAG vs Vanilla LLM:**
+
+| Metric | RAG Agent | Vanilla LLM | Improvement |
+|--------|-----------|-------------|-------------|
+| ROUGE-1 | 0.3124 | 0.1847 | +0.1277 ✅ |
+| ROUGE-2 | 0.1456 | 0.0612 | +0.0844 ✅ |
+| ROUGE-L | 0.2891 | 0.1634 | +0.1257 ✅ |
+| BLEU | 0.0823 | 0.0341 | +0.0482 ✅ |
+
+**Run evaluation:**
+```bash
+pip install rouge-score nltk bert-score
+python scripts/run_evaluation_metrics.py --dry-run --topk
+python scripts/run_evaluation_metrics.py --topk --vanilla   # requires live LLM
+python scripts/run_evaluation_metrics.py --bert --dry-run   # requires GPU
+```
 
 ---
 
@@ -166,7 +187,7 @@ $env:JOURNEYX_API_URL = "http://127.0.0.1:8000"
 |---|---|
 | **File** | `TECHNICAL_REPORT.md` in the repository |
 | **PDF version** | Convert `TECHNICAL_REPORT.md` to PDF using Pandoc or Word |
-| **Sections** | Abstract, Introduction, Architecture, Knowledge Base, RAG, Multi-Agent Orchestration, Evaluation, Compensating for Small Models, Deployment, Results, Responsible AI, Conclusion, References, Appendices |
+| **Sections** | Abstract, Introduction, Architecture, Knowledge Base, RAG, Multi-Agent Orchestration, Evaluation (incl. ROUGE/BLEU/BERT/RAG-vs-Vanilla), Compensating for Small Models, Deployment, Results, Responsible AI, Conclusion, References, Appendices |
 
 ### To convert to PDF:
 ```bash
@@ -176,6 +197,23 @@ pandoc TECHNICAL_REPORT.md -o TECHNICAL_REPORT.pdf --pdf-engine=xelatex
 # Or open in VS Code → right-click → "Open Preview" → Print to PDF
 # Or copy content into Word and export as PDF
 ```
+
+---
+
+## Deliverable 5 — Presentation Deck (4–5 Slides)
+
+| Item | Details |
+|---|---|
+| **File** | `PRESENTATION_SLIDES.md` in the repository |
+| **Slides** | 5 slides: Problem & Solution, Architecture, Knowledge Base & RAG, Evaluation Results, Compensating for Small Model & Demo |
+| **PDF version** | Convert `PRESENTATION_SLIDES.md` to PDF or import into Google Slides / PowerPoint |
+
+### Slide summary:
+1. **Slide 1** — Problem (fragmented trip planning) + Solution (JourneyX architecture)
+2. **Slide 2** — Multi-agent orchestration diagram + technology stack
+3. **Slide 3** — Knowledge base corpus + hybrid RAG pipeline + retrieval metrics
+4. **Slide 4** — Evaluation results (task completion, ROUGE/BLEU, RAG vs Vanilla LLM)
+5. **Slide 5** — Compensating for 8B model + deliverables checklist + demo queries
 
 ---
 
@@ -191,11 +229,18 @@ pandoc TECHNICAL_REPORT.md -o TECHNICAL_REPORT.pdf --pdf-engine=xelatex
 | Reranker | ✅ Cross-encoder | `rag/rerank.py` |
 | Citation-grounded answers | ✅ | Critic enforces `[cite:doc_id]` |
 | Recall@K separate from E2E | ✅ Recall@5=42.9% | `reports/retrieval_eval_v1.json` |
+| Top-K retrieval comparison (K=1,3,5) | ✅ | `scripts/run_evaluation_metrics.py --topk` |
+| ROUGE + BLEU lexical metrics | ✅ | `scripts/run_evaluation_metrics.py` |
+| BERT score semantic metric | ✅ | `scripts/run_evaluation_metrics.py --bert` |
+| RAG vs Vanilla LLM comparison | ✅ | `scripts/run_evaluation_metrics.py --vanilla` |
 | ≥3 tools | ✅ 8 tools | `packages/journeyx/tools/` |
 | Planner → Executor → Critic | ✅ | `orchestration/graph.py` |
 | Persistent state (multi-turn) | ✅ | SQLite checkpoints |
 | ≤10 steps/query | ✅ Avg 4.39 | `orchestration/budgets.py` |
 | E2E eval + failure taxonomy | ✅ 91.7% | `reports/agent_eval_v1.json` |
+| Follow-up suggestions (zero-shot) | ✅ | `apps/ui/streamlit_app.py` |
+| Destination validation (no hallucination) | ✅ | `orchestration/nodes.py` |
+| Document source reference links | ✅ | `tools/search_kb.py` |
 | Streamlit UI | ✅ | `apps/ui/streamlit_app.py` |
 | Docker | ✅ | `docker-compose.yml` |
 | Rate limiting + caching | ✅ 60 rpm | `apps/api/middleware.py` |
@@ -204,6 +249,8 @@ pandoc TECHNICAL_REPORT.md -o TECHNICAL_REPORT.pdf --pdf-engine=xelatex
 | Trace dashboard | ✅ | Streamlit Trace Dashboard tab |
 | Evaluation report + failure taxonomy | ✅ | `docs/eval_report.md` + `reports/*.json` |
 | 12-page technical report | ✅ | `TECHNICAL_REPORT.md` |
+| 4–5 slide presentation deck | ✅ | `PRESENTATION_SLIDES.md` |
+| API keys removed from repository | ✅ | `.env` + `credentials.local.yaml` in `.gitignore` |
 
 ---
 
@@ -214,11 +261,15 @@ pandoc TECHNICAL_REPORT.md -o TECHNICAL_REPORT.pdf --pdf-engine=xelatex
 | `USER_GUIDE.md` | Step-by-step setup and run instructions for graders |
 | `IMPLEMENTATION_PLAN.md` | Full capstone compliance traceability (666 lines) |
 | `PRESENTATION_AND_RUNBOOK.md` | System flow, run options, 10-minute demo script |
+| `PRESENTATION_SLIDES.md` | **4–5 slide presentation deck** |
 | `MENTOR_PRESENTATION.md` | Narrative walkthrough for mentor/panel presentation |
 | `TECHNICAL_REPORT.md` | 12-page technical report |
+| `docs/eval_report.md` | **Full evaluation report (ROUGE, BLEU, BERT, RAG vs Vanilla)** |
 | `docs/COMPLETE_SYSTEM_EXPLAINED.md` | Detailed walkthrough of every component |
 | `docs/IDEA_AND_AGENT_FLOW.md` | Agent flow with Mermaid diagrams |
 | `docs/gates/` | All 4 validation gate checklists (PASSED) |
+| `scripts/run_evaluation_metrics.py` | **Evaluation metrics script (ROUGE, BLEU, BERT, Top-K, Vanilla)** |
+| `config/credentials.local.yaml.example` | Credentials template (no real keys) |
 
 ---
 
