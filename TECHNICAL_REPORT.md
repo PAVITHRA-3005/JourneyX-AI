@@ -4,8 +4,7 @@
 
 **Programme:** IIT KGP Executive Post Graduate Programme in Generative AI and Agentic AI  
 **Track:** Track B — API-Side (hosted ≤8B endpoint, no GPU for teams)  
-**Team:** PAVITHRA-3005  
-**Members:** Pavithra V, Suresh Huse, Prabhakar Raturi, Srivishwa T, Pradeep Bastia  
+  **Members:** Pavithra V, Suresh Huse, Prabhakar Raturi, Srivishwa T, Pradeep Bastia, Raj Chatterjee  
 **GitHub:** https://github.com/PAVITHRA-3005/JourneyX-AI  
 **Submission Date:** November 2026
 
