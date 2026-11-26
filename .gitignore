@@ -17,5 +17,4 @@ reports/agent_traces.jsonl
 data/checkpoints.sqlite
 data/checkpoints.sqlite-shm
 data/checkpoints.sqlite-wal
-reports/baseline_results.json
 QUICK_SUMMARY.md
