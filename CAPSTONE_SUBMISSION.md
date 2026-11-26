@@ -2,8 +2,6 @@
 
 **Course:** Executive Post Graduate Programme in Generative AI and Agentic AI  
 **Track:** B — API-Side Multi-Agent Copilot  
-**Student:** Pavithra V  
-**Team:** Suresh Huse, Prabhakar Raturi, Srivishwa T, Pradeep Bastia, Pavithra V  
 **Submission Date:** November 27, 2026
 
 ---
@@ -23,9 +21,9 @@
 
 | File | Description |
 |------|-------------|
-| `TECHNICAL_REPORT.pdf` | 12-page technical report |
+| `TECHNICAL_REPORT.pdf` | Technical report |
 | `JourneyX AI — Capstone Presentation.pptx` | 5-slide presentation deck |
-| `JourneyX-AI-Demo.mp4` | Demo video (10-minute walkthrough) |
+| `JourneyX-AI-Demo.mp4` | Demo video |
 | `JourneyX-AI-main.zip` | Complete source code |
 | `JourneyX AI - Evaluation Results/` | Folder with all evaluation JSON files |
 | ↳ `agent_eval_v1.json` | Task completion: 91.7% (66/72), failure taxonomy |

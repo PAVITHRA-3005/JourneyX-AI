@@ -10,6 +10,21 @@
 
 ---
 
+## Submission Links
+
+| Item | Link |
+|------|------|
+| **Demo Video (10 min)** | https://drive.google.com/drive/folders/1Fm5iwJ7UUKibrmW_8RveRmAXoEk8AUmp?usp=sharing |
+| **GitHub Repository** | https://github.com/PAVITHRA-3005/JourneyX-AI |
+| **Trace Dashboard** | Streamlit UI → "Trace Dashboard" tab (http://localhost:8501 when running locally) |
+
+> **Demo Video:** The 10-minute demo video (`JourneyX-AI-Demo.mp4`) is available in the Google Drive folder above. Permission is set to "anyone with the link can view".  
+> **GitHub:** Repository is public — open to all.  
+> **Trace Dashboard:** Live trace dashboard is embedded in the Streamlit UI. Screenshots are included in Section 8 (Deployment and Observability) of this report.  
+> **Model Card:** See Section 9 (Responsible AI) of this report.
+
+---
+
 ## Abstract
 
 JourneyX is a conversational travel planning copilot built entirely on a hosted ≤8B language model (Qwen3-8B) with no fine-tuning and no frontier models. The system addresses the core challenge of deploying small language models in production: they hallucinate prices, invent distances, and make arithmetic errors. Our solution is a multi-agent architecture where the LLM's role is deliberately narrow — it understands language, plans tasks, and composes prose — while all factual retrieval and numerical computation are handled by deterministic tools and a hybrid RAG pipeline over a team-owned knowledge base.
@@ -689,6 +704,24 @@ JourneyX is explicitly positioned as a **planning and estimation tool only**. Ev
 ### 9.3 PII Handling
 
 The system does not store, log, or process PII. Trace logs record query summaries, not full query text, to avoid inadvertent PII logging.
+
+### 9.4 Model Card
+
+| Field | Details |
+|-------|---------|
+| **Model Name** | Qwen3-8B-Instruct (hosted capstone endpoint) |
+| **Model Type** | Decoder-only transformer, ≤8B parameters |
+| **Intended Use** | Conversational travel planning assistant — destination discovery, transport comparison, budget estimation, itinerary assembly |
+| **Out-of-Scope Use** | Live booking, payment processing, real-time fare guarantees, medical/safety advice, visa decisions |
+| **Training Data** | Pre-trained by Alibaba Cloud; no fine-tuning by this team |
+| **Evaluation Results** | 91.7% task completion (72 queries), 100% refusal accuracy, ROUGE-1: 0.3124 (+69% over vanilla) |
+| **Limitations** | Cannot reliably recall specific prices or distances without retrieval; arithmetic errors without deterministic tools; knowledge cutoff applies |
+| **Compensations** | Deterministic tools for all numerical computation; hybrid RAG for factual retrieval; Critic node for hallucination detection |
+| **Failure Modes** | Incomplete plans for sparse-data destinations (3/72); missing routes in KB (2/72); rare citation omission (1/72) |
+| **Refusal Behaviour** | Refuses booking, payment, PII, illegal/unsafe travel, live fare guarantees — enforced by rule-based Policy Gate (0 LLM calls) |
+| **Human-in-the-Loop** | All prices are indicative only; real purchases and safety decisions require human verification off-system |
+| **Data Provenance** | Knowledge base: team-curated from public travel information; no user data stored |
+| **Responsible AI Contact** | See `docs/refusal-policy.md` in the GitHub repository |
 
 ---
 
