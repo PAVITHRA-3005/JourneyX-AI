@@ -15,6 +15,7 @@
 | Item | Link |
 |------|------|
 | **Demo Video (10 min)** | https://drive.google.com/file/d/1GIuuKraro-uqkAwGQTm9Tn-vBD_EeT-X/view?usp=drive_link |
+| **Presentation Slides** | https://docs.google.com/presentation/d/15J99g8jrVvzKGt--T97iXPcHskGe9UpO/edit?usp=sharing |
 | **GitHub Repository** | https://github.com/PAVITHRA-3005/JourneyX-AI |
 | **Trace Dashboard** | Streamlit UI → "Trace Dashboard" tab (http://localhost:8501 when running locally) |
 
