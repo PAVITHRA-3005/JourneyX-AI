@@ -634,6 +634,86 @@ The Trace Dashboard in Streamlit reads these records and provides:
 - Tool call frequency analysis
 - Failure pattern visualization
 
+#### Live Trace Dashboard Screenshots
+
+**Figure 1 — JourneyX AI Main Interface (Chat Tab)**
+
+The main chat interface at `http://localhost:8501` with the welcome screen, sample query buttons in the sidebar, and backend status showing "Local mode (in-process)" with "Heuristic planner active".
+
+```
+URL: http://localhost:8501
+Tabs: Chat | Trace Dashboard | System Health
+Sidebar: BACKEND status + TRY THESE sample queries
+Sample queries: "Plan 3 days in Jaipur from Delhi", "Compare train and bus Delhi to Goa",
+                "5 days in Goa for 2 people", "Budget trip to Manali from Delhi",
+                "Best time to visit Kochi?", "Plan Agra trip from Delhi"
+```
+
+---
+
+**Figure 2 — Agent Trace Dashboard: Key Performance Indicators**
+
+The Trace Dashboard tab showing real-time KPIs across all 300 recorded spans from the evaluation run:
+
+| KPI | Value | Notes |
+|-----|-------|-------|
+| Total Spans | **300** | All agent steps recorded |
+| Tool Calls | **300** | All spans are tool-level (dry-run mode) |
+| LLM Calls | **0** | Dry-run mode — heuristic planner, no LLM |
+| Avg Latency | **0 ms** | In-process execution |
+| Errors | **11** | All from `compare_transport` (route gaps) |
+| **Success Rate** | **96.3%** | 289/300 spans successful |
+
+---
+
+**Figure 3 — Tool Call Breakdown**
+
+Breakdown of all 300 tool calls across the 72-query evaluation run:
+
+| Tool Name | Total Calls | Successful | Errors | Status |
+|-----------|-------------|------------|--------|--------|
+| `search_travel_kb` | 85 | 85 | 0 | ✅ |
+| `get_route_info` | 39 | 39 | 0 | ✅ |
+| `compare_transport` | 39 | 28 | **11** | ⚠️ |
+| `estimate_budget` | 37 | 37 | 0 | ✅ |
+| `find_accommodations` | 34 | 34 | 0 | ✅ |
+| `list_pois` | 33 | 33 | 0 | ✅ |
+| `assemble_itinerary` | 33 | 33 | 0 | ✅ |
+
+> **Note:** The 11 errors in `compare_transport` correspond to the 2 `no_tool_result` failures in the evaluation — routes not present in the knowledge base. All other tools have 100% success rate.
+
+---
+
+**Figure 4 — Recent Trace Timeline**
+
+The trace timeline shows the last 50 spans with filtering by node type and status. Each row represents one step in the agent pipeline with columns: Time, Step, Node, Tool Called, Latency, Status, Thread ID.
+
+Example trace entries (from evaluation run):
+```
+22:30:33  Step 2  Executor  estimate_budget      —  ✅ ok  5f630584-35a
+22:30:33  Step 2  Executor  find_accommodations  —  ✅ ok  5f630584-35a
+22:30:33  Step 2  Executor  assemble_itinerary   —  ✅ ok  5f630584-35a
+```
+
+Filters available: Filter by Node (executor, planner, critic, composer), Filter by Status (ok, error), Show last N spans.
+
+---
+
+**Figure 5 — Error Log**
+
+The error log shows all 11 errors detected across the evaluation run. All errors originate from the `compare_transport` tool in the Executor node, corresponding to transport routes not present in the knowledge base (the `no_tool_result` failure class in the failure taxonomy).
+
+```
+Node      | Tool              | Error Detail | Thread
+----------|-------------------|--------------|------------------
+Executor  | compare_transport | —            | a4b43d7b-de8
+Executor  | compare_transport | —            | 42ae7c19-38c
+Executor  | compare_transport | —            | c5981c4d-78e
+... (11 total errors, all compare_transport)
+```
+
+**Analysis:** All 11 errors are data gaps (routes not in the transport_option table), not model failures. The system handles these gracefully — the Critic detects the empty tool result and the response is marked as `no_tool_result` in the failure taxonomy.
+
 ---
 
 ## 9. Responsible AI
