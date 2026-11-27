@@ -638,20 +638,15 @@ The Trace Dashboard in Streamlit reads these records and provides:
 
 **Figure 1 — JourneyX AI Main Interface (Chat Tab)**
 
-The main chat interface at `http://localhost:8501` with the welcome screen, sample query buttons in the sidebar, and backend status showing "Local mode (in-process)" with "Heuristic planner active".
+![Figure 1: JourneyX AI Main Interface — Chat Tab with welcome screen and sample queries](docs/images/trace-main-ui.png)
 
-```
-URL: http://localhost:8501
-Tabs: Chat | Trace Dashboard | System Health
-Sidebar: BACKEND status + TRY THESE sample queries
-Sample queries: "Plan 3 days in Jaipur from Delhi", "Compare train and bus Delhi to Goa",
-                "5 days in Goa for 2 people", "Budget trip to Manali from Delhi",
-                "Best time to visit Kochi?", "Plan Agra trip from Delhi"
-```
+The main chat interface at `http://localhost:8501` with the welcome screen, sample query buttons in the sidebar, and backend status showing "Local mode (in-process)" with "Heuristic planner active".
 
 ---
 
 **Figure 2 — Agent Trace Dashboard: Key Performance Indicators**
+
+![Figure 2: Agent Trace Dashboard — Key Performance Indicators (300 spans, 96.3% success rate)](docs/images/trace-kpis.png)
 
 The Trace Dashboard tab showing real-time KPIs across all 300 recorded spans from the evaluation run:
 
@@ -667,6 +662,8 @@ The Trace Dashboard tab showing real-time KPIs across all 300 recorded spans fro
 ---
 
 **Figure 3 — Tool Call Breakdown**
+
+![Figure 3: Tool Call Breakdown — all 7 tools with success and error counts](docs/images/trace-tools.png)
 
 Breakdown of all 300 tool calls across the 72-query evaluation run:
 
@@ -686,6 +683,8 @@ Breakdown of all 300 tool calls across the 72-query evaluation run:
 
 **Figure 4 — Recent Trace Timeline**
 
+![Figure 4: Recent Trace Timeline — per-step execution with node filtering and thread IDs](docs/images/trace-timeline.png)
+
 The trace timeline shows the last 50 spans with filtering by node type and status. Each row represents one step in the agent pipeline with columns: Time, Step, Node, Tool Called, Latency, Status, Thread ID.
 
 Example trace entries (from evaluation run):
@@ -700,6 +699,8 @@ Filters available: Filter by Node (executor, planner, critic, composer), Filter 
 ---
 
 **Figure 5 — Error Log**
+
+![Figure 5: Error Log — 11 errors from compare_transport tool (data gaps, not model failures)](docs/images/trace-errors.png)
 
 The error log shows all 11 errors detected across the evaluation run. All errors originate from the `compare_transport` tool in the Executor node, corresponding to transport routes not present in the knowledge base (the `no_tool_result` failure class in the failure taxonomy).
 
